@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        body{
+            margin: 0px;
+        }
+        .header{
+            height: 400px;
+            background-color: yellow;
+
+        }
+        .imgContainer{
+            height: 400px;
+            overflow: hidden;
+            position: absolute;
+            top: 0;
+            z-index: 10;
+        }
+        /* .cityImg{
+            position: relative;
+            
+        } */
+    
+        .opacityContainer{
+            background-color:rgb(27, 75, 75);
+            height: 400px;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            z-index: 20;
+            opacity: 60%;
+
+        }
+        .textContainer{
+            z-index: 30;
+            width: 100%;
+            /* height: 400%; */
+            line-height: 400px;
+            position: absolute;
+            top:0px;
+            color: rgb(236, 187, 114);
+            text-align: center;
+            font-size: 30px;
+        }
+
+        .aqua{
+            background-color: aquamarine;
+            width: 100%;
+            height: 350px;
+        }
+        .whiteContainer{
+            height: 350px;
+        }
+
+        .nav{
+            background-color:yellow;
+            height: 40px;
+            width: 100%;
+            position: fixed;
+            text-align: right;
+            top: 0;
+            z-index: 50;
+            padding-right: 30px;
+        }
+
+        .wrapper{
+            margin-right: 20px;
+            margin-top: 10px;
+        }
+
+        .wrapper a{
+            text-decoration: none;
+        }
+
+        .wrapper a:hover{
+            background-color: tomato;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="nav">
+        <div class="wrapper">
+            <a href="#">Home</a>
+            <a href="#">Blog</a>
+            <a href="#">FAQ</a>
+            <a href="#">About Us</a>
+        </div>
+
+
+
+    </div>
+    
+    <div class="header">
+        <div class="imgContainer">
+            <img class="cityImg" width="100%" src="https://slack-imgs.com/?c=1&o1=ro&url=https%3A%2F%2Fwww.outfrontmedia.com%2F-%2Fmedia%2Fimages%2Fofm%2Fmarkets%2Fhouston%2Fhouston-hero.ashx"
+            alt="city of houston texas">
+        </div>
+        <div class="textContainer">
+            <h1>Hey, Houston</h1>
+        </div>
+        <div class="opacityContainer"></div>
+    </div>
+<!-- End of Header -->
+<div class="main">
+    <div class="aqua"></div>
+    <div class="whiteContainer"></div>
+    <div class="aqua"></div>
+    <div class="whiteContainer"></div>
+</div>
+
+</body>
+</html>
