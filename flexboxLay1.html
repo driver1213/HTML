@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Flexbox Layout 1</title>
+
+    <style>
+        .header{
+            display: flex;
+            flex-direction: row;
+            /* flex-wrap: wrap;  */
+            justify-content: center;
+            /* align-items: center; */
+            /* height: 50px; */
+            background-color: skyblue;
+            font-size: 20px;
+
+        }
+
+        .container{
+            display: flex;
+            height: 75vh;
+            justify-content: space-between;
+            
+        }
+
+        .one{
+            display: flex;
+            flex-direction: column;
+            height: 500px;
+            width: 300px;
+            background-color: rgb(73, 24, 122);
+            font-size: 20px;
+            color: tomato;
+        }
+
+        .two{
+            display: flex;
+            flex-direction: column;
+            height: 400px;
+            width: 1000px;
+            background-color: rgb(8, 105, 65);
+            font-size: 20px;
+            color: tomato;
+
+        }
+
+        .footer{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            background-color: rgb(230, 226, 43);
+            font-size: 20px;
+
+        }
+    
+    
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1>Header</h1>
+    </div>
+
+    <div class="container">
+        <div class="one">
+            <h1>One</h1>
+        </div>
+
+        <div class="two">
+            <h1>Two</h1>
+        </div>
+    </div>
+    
+
+    <div class="footer">
+        <h1>Footer</h1>
+    </div>
+
+    
+</body>
+</html>

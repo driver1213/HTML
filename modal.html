@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Modal</title>
+
+    <style>
+        nav{
+            margin: 0;
+        }
+        .modal-dialog{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-end;
+            width: 25%;
+            background-color: white;            
+            align-content: center;
+            
+        }
+
+        .modal-header{
+            display: flex;
+            justify-content: flex-start;
+            flex-direction: row;
+            background-color: gray;
+            width: 100%;
+        }
+        .modal-title{
+            display: flex;
+            color: white;
+            font-size: 30px;
+            padding: 10px;
+
+        }
+        .modal-content{
+            display: flex;
+            justify-content: flex-start;
+            height: 100%;
+
+        }
+        .modal-buttons{
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-end;
+            padding: 10px;
+        }
+
+        .border{
+            border: 5px black solid;
+        }
+    
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="modal-dialog border">
+            <div class="modal-header">
+                <label class="modal-title">Hello</label>
+            </div>
+            <div class="modal-content">
+                <p>Would you like to subscribe to our email newsletter?</p> </div>
+                <div class="modal-buttons">
+                    <button>Ok</button>
+                    <button>Cancel</button>
+                </div>
+            </div>
+    </nav>
+</body>
+</html>
