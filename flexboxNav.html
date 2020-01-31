@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Flexbox Navigation</title>
+
+    <style>
+        nav{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: flex-start;
+            height: 50px;
+            background-color: skyblue;
+            padding: 15px;
+        }
+
+        .container{
+            display: flex;
+            flex-direction: row;
+            /* flex-wrap: wrap;  */
+            justify-content: flex-start;
+            align-items: flex-start;
+            /* height: 50px; */
+            background-color: skyblue;
+            font-size: 30px;
+            flex-grow: 4;
+        }
+
+        .container2{
+            display: flex;
+            flex-direction: row;
+            /* flex-wrap: wrap;  */
+            justify-content: space-around;
+            align-items: flex-end;
+            /* height: 110px; */
+            /* background-color: skyblue; */
+            flex-grow: 1;
+            
+        }
+
+        .item{
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            /* width: 150px; */
+            height: 100px;
+            /* background-color: tomato; */
+            /* margin: 10px; */
+            font-size: 30px;
+            
+            
+        }
+    
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <div class="container">
+            <a href="#">Company Name</a>
+        </div>
+
+    <div class="container2">
+        <div class="item">
+            <a href="#">Home</a>
+        </div>
+        <div class="item">
+            <a href="#">Products</a>
+        </div>
+        <div class="item">
+            <a href="#">About</a>
+        </div>
+        <div class="item">
+            <a href="#">Careers</a>
+        </div>
+        <div class="item">
+            <a href="#">Contact</a>
+        </div>
+            
+    </div>
+
+    </nav>
+</body>
+</html>
