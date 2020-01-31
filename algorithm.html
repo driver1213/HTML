@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS Shapes</title>
+
+    <style>
+        #triangle-up {
+                width: 0;
+                height: 0;
+                border-left: 50px solid transparent;
+                border-right: 50px solid transparent;
+                border-bottom: 100px solid red;
+                }
+                .triangle-down{
+                    width: 0;
+                    height: 0;
+                    border-left: 50px solid transparent;
+                    border-right: 50px solid transparent;
+                    border-top: 100px solid rgb(129, 153, 21);
+                }
+
+                .triangle-left{
+                    width: 0;
+                    height: 0;
+                    border-right: 100px solid black;
+                    border-top: 50px solid transparent;
+                    border-bottom: 50px solid transparent;
+                }
+                .right-triangle{
+                    width: 0;
+                    height: 0;
+                    border-right: 100px solid rgb(144, 10, 10);
+                    border-top: 100px solid transparent;
+                    border-bottom: 0px solid transparent;
+                }
+
+                .trapezoid {
+                            border-bottom: 100px solid #333;
+                            border-left: 50px solid transparent;
+                            border-right: 50px solid transparent;
+                            height: 0;
+                            width: 100px;
+                        }
+
+                .shape {
+                    height: 150px;
+                    width: 150px;
+                    background-color: blue;
+                    border-radius: 80px;
+                    margin-bottom: 30px;
+                    float: left;
+                    margin-right: 20px;
+                    }
+
+                    .circle {
+                    border-radius: 50px;
+                    }
+
+                    .square{
+                    border-radius: 5px;
+                    }
+
+                    .rectangle{
+                        display: flex;
+                        height: 100px;
+                        width: 300px;
+                        background-color: brown;
+                    }
+
+                    .oval{
+                        display: flex;
+                        height: 100px;
+                        width: 100px;
+                        border-radius: 50%;
+                        background-color: yellow;
+                    }
+
+                    .diamond {
+                        height: 150px;
+                        width: 150px;
+                        background-color: purple;
+                        transform: rotate(45deg);
+                        position: absolute;
+                        } 
+
+                    body, html {
+                    height: 100%;
+                    }
+
+                    body {
+                    background-color: rgb(203, 245, 203);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-wrap: wrap;
+                    } 
+                    
+                    .pacman {
+                width: 0px;
+                height: 0px;
+                border-right: 60px solid transparent;
+                border-top: 60px solid red;
+                border-left: 60px solid red;
+                border-bottom: 60px solid red;
+                border-top-left-radius: 60px;
+                border-top-right-radius: 60px;
+                border-bottom-left-radius: 60px;
+                border-bottom-right-radius: 60px;
+                position: relative;
+                
+                }
+                    
+                .star-six {
+                    width: 0;
+                    height: 0;
+                    border-left: 50px solid transparent;
+                    border-right: 50px solid transparent;
+                    border-bottom: 100px solid red;
+                    position: relative;
+                    }
+                    .star-six:after {
+                    width: 0;
+                    height: 0;
+                    border-left: 50px solid transparent;
+                    border-right: 50px solid transparent;
+                    border-top: 100px solid red;
+                    position: absolute;
+                    content: "";
+                    top: 30px;
+                    left: -50px;
+                    }
+
+        
+        
+
+
+    </style>
+</head>
+
+<body>
+    <div class="pacman"></div>
+
+    <div class="shape"></div>
+    <div class="shape circle"></div>
+    <div class="shape square"></div>
+    <div class="rectangle"></div>
+    <div class="oval"></div>
+    <div class="triangle-down"></div>
+    <div class="triangle-left"></div>
+    <div class="right-triangle"></div>
+    <div class="trapezoid"></div>
+    <div class="diamond"></div>
+
+    <div class="star-six"></div>
+    
+
+
+
+
+</body>
+</html>
