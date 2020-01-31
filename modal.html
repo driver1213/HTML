@@ -7,18 +7,25 @@
     <title>Modal</title>
 
     <style>
-        nav{
-            margin: 0;
+        .nav{
+            display: flex;
+            /* background-color: white; */
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            width: 100vw;
+            z-index: 20;
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRDXQgersqqh57EUrPdOuX_ePn2rAeVqXDxxlUT-nT6CmtKGUuZ");
         }
+
         .modal-dialog{
             display: flex;
             flex-direction: column;
             justify-content: center;
-            align-items: flex-end;
             width: 25%;
             background-color: white;            
             align-content: center;
-            
+            position: relative;
         }
 
         .modal-header{
@@ -51,12 +58,18 @@
         .border{
             border: 5px black solid;
         }
-    
+        
+        img{
+            position: absolute;
+            top: 0px;
+            height: 1000px;
+            z-index: 10;
+        }
     </style>
 </head>
 
 <body>
-    <nav>
+    <div class="nav">
         <div class="modal-dialog border">
             <div class="modal-header">
                 <label class="modal-title">Hello</label>
@@ -68,6 +81,7 @@
                     <button>Cancel</button>
                 </div>
             </div>
-    </nav>
+</div>
+
 </body>
 </html>
